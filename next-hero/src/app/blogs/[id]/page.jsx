@@ -1,7 +1,7 @@
 import React from 'react';
 
 const DetailsPage = ({params}) => {
-  const singleBlog = blogs.find(blog => blog.id == params.id);
+     const singleBlog = blogs.find(blog => blog.id == params.id);
     return (
         <div className='bg-gray-500 py-10'>
             <h2 className="font-bold text-3xl mt-5 text-center">{singleBlog.title}</h2>
