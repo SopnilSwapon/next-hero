@@ -1,7 +1,6 @@
 import React from 'react';
 
 const CategoriesDetailsPage = ({params}) => {
-    // console.log(params)
     if(params.features.length == 3){
         return <div>{params.features[2]}</div>
     }
