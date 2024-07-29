@@ -24,10 +24,26 @@ const Navbar = () => {
      {
         path: '/services',
         title: 'Services'
+     },
+     {
+        path: '/dashboard',
+        title: 'Dashboard'
+     },
+     {
+        path: '/categories',
+        title: 'Categories'
      }
     ]
     const handler = () =>{
      router.push('/login')
+    };
+    if(pathName.includes('dashboard')){
+      return (
+         <div className='bg-green-300 flex gap-3 font-bold'>
+           <h2>dashboard LayOUT</h2>
+           <Link href='/'>Home</Link>
+         </div>
+      )
     }
     return (
         <nav className="flex gap-5 text-white justify-between items-center bg-green-500 p-2 rounded">
